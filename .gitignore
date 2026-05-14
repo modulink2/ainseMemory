@@ -1,9 +1,16 @@
-# Connect AI auto-generated
-.DS_Store
-.obsidian/
-.trash/
-node_modules/
-*.tmp
+# 자동 생성 — Connect AI 1인 기업 모드
+# 시크릿·API 키 보호
+_company/_agents/*/config.md
+# 도구 설정 JSON 안에 API 키·텔레그램 봇 토큰이 들어갈 수 있어 git에서 제외
+_company/_agents/*/tools/*.json
+_company/_agents/*/tools/youtube_account.json
+_company/_agents/youtube/oauth.local.json
+_company/_agents/secretary/tools/google_calendar_write.json
+
+*.local.json
+# 외부 API 응답 캐시 (재현 가능)
+_cache/
+
+# 대용량 임시 산출물
+_tmp/
 *.log
-.cache/
-Thumbs.db

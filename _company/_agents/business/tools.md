@@ -1,6 +1,6 @@
-# 💼 현빈 — 도구 매니페스트
+# 💰 Business — 도구 매니페스트
 
-_현빈 에이전트가 어떤 도구를 어디까지 자율적으로 쓸 수 있는지 정의합니다._
+_Business 에이전트가 어떤 도구를 어디까지 자율적으로 쓸 수 있는지 정의합니다._
 _매번 시스템 프롬프트로 주입되며, 텔레그램에서 `/tools`로 현재 상태 확인 가능._
 
 ---
@@ -22,33 +22,23 @@ AUTONOMY_LEVEL: 2
 
 ## 사용 가능한 도구
 
-### `paypal_revenue`
-내 PayPal 매출 자동 분석 — 일/주/월별 + 통화별 + 환불율
+### `revenue_pull`
+Stripe/Toss/PayPal 매출 데이터
 
 - `enabled`: true
 - `requires_credentials`: `config.md` 참조
 
-
----
-
-## 로드맵 (예정)
-
-_아래 도구들은 향후 버전에서 추가 예정. 지금은 카탈로그에만 있음._
-
-### `revenue_pull` _(예정)_
-Stripe/Toss 매출 데이터 (PayPal은 paypal_revenue 별도)
-
-- 아직 구현되지 않은 도구입니다. 로드맵에 있으며 향후 버전에서 추가 예정.
-
-### `analytics_pull` _(예정)_
+### `analytics_pull`
 Google Analytics / Plausible 트래픽
 
-- 아직 구현되지 않은 도구입니다. 로드맵에 있으며 향후 버전에서 추가 예정.
+- `enabled`: true
+- `requires_credentials`: `config.md` 참조
 
-### `pnl_generator` _(예정)_
+### `pnl_generator`
 월별 P&L 마크다운 자동 생성
 
-- 아직 구현되지 않은 도구입니다. 로드맵에 있으며 향후 버전에서 추가 예정.
+- `enabled`: true
+- `requires_credentials`: `config.md` 참조
 
 
 ---

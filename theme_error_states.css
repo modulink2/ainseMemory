@@ -1,0 +1,56 @@
+/* 갓더주식 - Error State System */
+
+:root {
+    /* 브랜드 컬러 설정 (가정된 기본값) */
+    --color-primary: #007bff; /* Blue */
+    --color-success: #28a745; /* Green */
+    --color-warning: #ffc107; /* Yellow/Amber */
+    --color-danger: #dc3545; /* Red */
+    --color-text-default: #343a40;
+    --color-background-light: #f8f9fa;
+    --color-border-error: #dc3545;
+    --color-border-warning: #ffc107;
+}
+
+/* --- 공통 에러 스타일 --- */
+.error-state {
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-left: 4px solid; /* 상태를 시각적으로 강조하기 위해 왼쪽 라인을 사용 */
+}
+
+/* --- Critical (치명적 오류) --- */
+.error-state.critical {
+    background-color: #f8d7da; /* Light Red Background */
+    color: var(--color-danger);
+    border: 1px solid var(--color-border-error);
+}
+
+/* --- Warning (경고) --- */
+.error-state.warning {
+    background-color: #fff3cd; /* Light Yellow Background */
+    color: #856404;
+    border: 1px solid var(--color-border-warning);
+}
+
+/* --- Success (성공 상태) --- */
+.error-state.success {
+    background-color: #d4edda; /* Light Green Background */
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
+}
+
+/* --- 추가적인 상태 정의 (선택 사항) --- */
+.error-state.info {
+    background-color: #d1ecf1; /* Light Blue Background for Information */
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+/* --- 레이아웃 조정 (선택 사항 - 컴포넌트 내에서 사용될 경우) --- */
+.error-state .message {
+    margin-left: 8px;
+}

@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "timestamp": "YYYY-MM-DDTHH:MM:SSZ",
+    "system_status": "OK" // 시스템의 현재 안정성 상태 (PTI 기반)
+  },
+  "safety_metrics": {
+    "pti_score": 85.5, // 시스템 안정성 지수 (0-100점), 가장 중요한 지표
+    "risk_level": "Moderate", // PTI 점수에 따른 위험 레벨 (Low, Moderate, High)
+    "stability_trend": "Stable" // 최근 N 기간의 안정성 추이
+  },
+  "profitability_metrics": {
+    "roi_score": 1.25, // 수익화 지수 (ROI), 보조 지표로 배치
+    "potential_return": 15.0, // 예측되는 잠재 수익률 (%)
+    "hedge_value": 1200000 // 헤징 관련 가치 데이터 (선택 사항)
+  },
+  "prediction_details": [
+    {
+      "stock_code": "005930",
+      "prediction_type": "Ascending", // 상승 예측, 급등 예측 등
+      "confidence": 0.88, // 예측에 대한 신뢰도 (0.0 ~ 1.0)
+      "predicted_value": 15000.0, // 예측 가격 또는 수익률 값
+      "analysis": "강성주", // 분석 결과 태그
+      "risk_factor": "Low" // 해당 종목의 리스크 요인 평가
+    }
+  ],
+  "system_notes": {
+    "note": "시스템 안정성은 현재 최우선 관리 항목입니다. ROI는 보조 지표로 참고하십시오.",
+    "disclaimer": "모든 투자 결정은 개인의 판단에 따릅니다."
+  }
+}
